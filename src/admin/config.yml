@@ -27,8 +27,6 @@ collections:
 
   - name: "dragon"
     label: "dragon"
-    media_folder: "src/assets/images/dragon"
-    public_folder: "/assets/images/dragon"
     folder: "src/content/dragon"
     create: true
     slug: "{{slug}}"
