@@ -46,6 +46,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets/js");
   eleventyConfig.addPassthroughCopy("./src/assets/audio");
   eleventyConfig.addPassthroughCopy("./src/content/cms");
+  eleventyConfig.addPassthroughCopy("./src/content/dragon");
 
   // Other required folders are passed through
   eleventyConfig.addPassthroughCopy("./src/admin");
@@ -55,6 +56,7 @@ module.exports = function (eleventyConfig) {
 
   //addWatchTarget — watches for changes and triggers that copy to re-run
   eleventyConfig.addWatchTarget("./src/content/cms");
+  eleventyConfig.addWatchTarget("./src/content/dragon");
 
   // FILTERS - Modify data in template files at build time
   // Converts dates from JSDate format (Fri Dec 02 18:00:00 GMT-0600) to a locale format. More info in docs - https://moment.github.io/luxon/api-docs/index.html#datetime
